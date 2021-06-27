@@ -1,0 +1,653 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+  /* ユーザーが設定した文字サイズを正しく反映 */
+  font-family: HG丸ゴシックM-PRO;
+  /* 書体の指定 */
+}
+
+body {
+  color: #121212;
+  line-height: 1.7;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  padding: 20px 0 20px 0;
+}
+
+.my-fa {
+  color: rgba(254, 254, 254, 0.9);
+  opacity: 0;
+  z-index: 200;
+  margin: 0 20px;
+}
+
+th {
+  font-weight: normal;
+}
+
+h3, h4 {
+  font-family: "富士ポップ";
+}
+
+h3 {
+  width: 16rem;
+  font-size: 1.75rem;
+  background: linear-gradient(transparent 60%, #fff8a8 80%);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+/****************************************/
+/********** header **********/
+.logo {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+}
+.logo-main {
+  font-family: "富士ポップ";
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
+.logo-sub {
+  font-family: "游ゴシック";
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.logo-sub::before, .logo-sub::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 1px;
+  margin: 0 4px;
+  border-radius: 1px;
+  background: #121212;
+  vertical-align: middle;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+#header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+#header .header-nav .toggle-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+}
+#header .header-nav .bar {
+  display: block;
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00BFFF;
+  transition: all 0.5s;
+}
+#header .header-nav .bar:nth-child(1) {
+  top: 18px;
+}
+#header .header-nav .bar:nth-child(1).open {
+  transform: translateY(10px) rotate(-45deg);
+}
+#header .header-nav .bar:nth-child(2) {
+  top: 28px;
+}
+#header .header-nav .bar:nth-child(2).open {
+  opacity: 0;
+}
+#header .header-nav .bar:nth-child(3) {
+  top: 38px;
+}
+#header .header-nav .bar:nth-child(3).open {
+  transform: translateY(-10px) rotate(45deg);
+}
+#header .header-nav .logo-main {
+  color: #00BFFF;
+  text-shadow: 1px 1px 3px #121212;
+}
+#header .menu {
+  position: absolute;
+  top: 60;
+  left: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(254, 254, 254, 0.9);
+  transition: all 0.3s;
+}
+#header .menu.open {
+  height: 100vh;
+}
+#header .menu ul:last-of-type {
+  border-bottom: solid 1px #00BFFF;
+}
+#header .menu li {
+  font-family: "富士ポップ";
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-top: solid 1px #00BFFF;
+}
+#header .menu li a {
+  color: #aaa;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+}
+#header .menu li a:hover {
+  color: #00BFFF;
+  font-size: 1.3rem;
+}
+#header .menu li a:hover .my-fa {
+  opacity: 1;
+  color: #00BFFF;
+  opacity: 0.4;
+  text-shadow: 0px 0px 1px #121212;
+}
+
+/***** /header *****/
+.bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(138, 225, 252, 0.7) 0%, rgba(124, 255, 135, 0.8) 100%);
+}
+
+/********** top **********/
+#top {
+  height: 400px;
+  background-image: url(../img/aquarium.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+#top .logo {
+  width: 360px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+#top .logo-main {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #eee;
+  text-shadow: 5px 5px 5px #121212;
+}
+#top .logo-sub {
+  font-size: 1.5rem;
+  color: #eee;
+  text-shadow: 3px 3px 5px #121212;
+}
+#top .logo-sub::before, #top .logo-sub::after {
+  width: 12px;
+  height: 2px;
+  margin: 0 8px;
+  border-radius: 1px;
+  background: #eee;
+}
+
+/***** /top *****/
+/********** intro **********/
+#intro {
+  padding-top: 10px;
+}
+#intro h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.intro-container {
+  padding: 20px 10px;
+  padding-top: 10px;
+  background: #fafac8;
+  border-radius: 10px;
+}
+
+/***** /intro *****/
+/********** pikup **********/
+.pikup-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pikup-item {
+  padding: 10px;
+  margin: 10px;
+  background: #fafac8;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.pikup-item:hover {
+  transform: scale(1.1, 1.1);
+}
+.pikup-item img {
+  border-radius: 10px;
+}
+.pikup-item .arrow {
+  font-size: 0.8rem;
+  height: 1.2rem;
+  text-align: right;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+.pikup-item a:hover .arrow {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/***** /pikup *****/
+/********** recommended **********/
+#recommended h4 {
+  margin-top: 30px;
+}
+#recommended p {
+  text-align: left;
+}
+
+.recommended-container {
+  margin: 20px;
+  background: #fafac8;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.recommended-container img {
+  width: 55%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.recommended-container .recommended-text {
+  margin: 0 20px;
+}
+.recommended-container .recommended-text span {
+  display: inline-block;
+  width: 100px;
+}
+
+/***** /recommended *****/
+/********** event **********/
+.event-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-item {
+  background: #fafac8;
+  padding: 10px 0;
+  margin: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+.event-item img {
+  width: 95%;
+  margin: 10px;
+}
+
+.event-text {
+  text-align: left;
+  padding: 10px;
+}
+
+/***** /event *****/
+/********** other **********/
+.other-items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.other-item {
+  background: #fafac8;
+  border-radius: 10px;
+}
+.other-item img {
+  width: 95%;
+  margin: 5px;
+}
+.other-item .other-text p {
+  height: 130px;
+  padding: 5px;
+  text-align: left;
+  line-height: 1.3;
+}
+.other-item .other-text table {
+  width: 100%;
+  table-layout: fixed;
+}
+.other-item .other-text th, .other-item .other-text td {
+  font-size: 0.75rem;
+}
+.other-item .other-text th {
+  width: 20%;
+}
+.other-item .other-text .first {
+  width: 5%;
+}
+.other-item .other-text .second {
+  width: 75%;
+}
+.other-item .other-text td {
+  text-align: left;
+}
+
+/***** /other *****/
+/********** map **********/
+#map img {
+  margin-top: 10px;
+}
+
+/***** /map *****/
+/********** overview **********/
+.overview {
+  background: #fafac8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.overview table {
+  width: 100%;
+}
+.overview .overview-left thead th {
+  border-top: 1px dotted #aaa;
+}
+.overview .overview-left th {
+  width: 50%;
+}
+.overview .overview-left p {
+  color: red;
+  text-shadow: 0px 0px 3px #aaa;
+}
+.overview .overview-right th {
+  width: 30%;
+}
+.overview .overview-right td {
+  text-align: left;
+}
+
+.overview-left {
+  width: 50%;
+}
+
+.overview-right {
+  width: 50%;
+}
+
+/***** /overview *****/
+/********** contacct **********/
+#contact {
+  padding-top: 20px;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+/***** /contacct *****/
+/********** footer **********/
+footer {
+  background: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+/***** /footer *****/
+/********** v **********/
+.v-title {
+  background: linear-gradient(rgba(253, 131, 131, 0.7) 0%, rgba(219, 4, 51, 0.8) 100%);
+  width: 100px;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+  bottom: 0px;
+  cursor: pointer;
+  transition: all 0.8s;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  transform: translateY(30px);
+}
+.v-title p {
+  font-family: "富士ポップ";
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0;
+}
+.v-title:hover {
+  background: #fd8383;
+}
+.v-title:hover p {
+  color: #121212;
+}
+.v-title.open {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  background: #fff;
+  width: 40px;
+}
+.v-title.open p {
+  color: #121212;
+  font-size: 0;
+}
+.v-title.open p::before {
+  font-size: 1rem;
+  font-weight: bold;
+  content: "✖";
+}
+
+/***** v *****/
+.v-text {
+  background: linear-gradient(#fd8383 0%, #db0433 100%);
+  font-weight: bold;
+  width: 430px;
+  height: 60px;
+  border: solid 2px #fd8383;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: -60px;
+  right: 20px;
+  transition: all 0.8s;
+}
+.v-text.open {
+  bottom: 0;
+  background: #fff;
+}
+.v-text p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/********************************************************************************/
+@media screen and (max-width: 900px) {
+  /********** other **********/
+  .other-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/***** /other *****/
+/* sp レスポンシブ */
+@media screen and (max-width: 600px) {
+  .pc-view {
+    display: none;
+  }
+
+  p {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  th, td {
+    font-size: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /********** header **********/
+  #header {
+    height: 40px;
+  }
+  #header .header-nav .toggle-btn {
+    height: 40px;
+  }
+  #header .header-nav .bar:nth-child(1) {
+    top: 8px;
+  }
+  #header .header-nav .bar:nth-child(1).open {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  #header .header-nav .bar:nth-child(2) {
+    top: 18px;
+  }
+  #header .header-nav .bar:nth-child(2).open {
+    opacity: 0;
+  }
+  #header .header-nav .bar:nth-child(3) {
+    top: 28px;
+  }
+  #header .header-nav .bar:nth-child(3).open {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  #header .header-nav .logo {
+    height: 40px;
+  }
+  #header .header-nav .logo-main {
+    margin-top: 5px;
+  }
+  #header .header-nav .logo-sub {
+    display: none;
+  }
+  #header .menu {
+    top: 40px;
+  }
+  #header .menu li a {
+    color: #121212;
+  }
+
+  /***** /header *****/
+  /********** intro **********/
+  #intro {
+    padding: 10px;
+  }
+  #intro h2 {
+    font-size: 1.25rem;
+  }
+  #intro p {
+    text-align: left;
+  }
+
+  /***** /intro *****/
+  /********** pikup **********/
+  .pikup-item {
+    margin: 0 2px;
+  }
+  .pikup-item:hover {
+    transform: scale(1, 1);
+  }
+
+  /***** /pikup *****/
+  /********** recommended **********/
+  .recommended-container {
+    flex-direction: column;
+  }
+  .recommended-container img {
+    width: 95%;
+  }
+  .recommended-container .recommended-text span {
+    display: inline;
+  }
+
+  /***** /recommended *****/
+  /********** event **********/
+  .event-items {
+    flex-direction: column;
+  }
+
+  .event-item {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .event-item img {
+    width: 90%;
+  }
+  .event-item .event-text {
+    padding: 10px 20px;
+  }
+
+  /***** /event *****/
+  /********** other **********/
+  .other-item .other-text p {
+    height: 100px;
+  }
+
+  /***** /other *****/
+  /********** overview **********/
+  .overview {
+    flex-direction: column;
+  }
+
+  .overview-left {
+    width: 100%;
+  }
+
+  .overview-right {
+    width: 100%;
+  }
+
+  .fee p {
+    text-align: center;
+  }
+
+  /***** /overview *****/
+  /********** contact **********/
+  #contact p {
+    text-align: center;
+  }
+
+  /***** /contact *****/
+  /********** footer **********/
+  #footer p {
+    text-align: center;
+  }
+
+  /***** /footer *****/
