@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">  <!-- 日本語 -->
+    <head>
+        <meta charset="utf-8">  <!-- 文字指定 -->
+        <title>星駆水族館</title>  <!-- ページタイトル -->
+        <meta name="description" content="????">  <!-- ページの説明 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- レスポンシブ 表示領域の横幅を合わせる -->
+        <link rel="icon" type="image/png" href="????">  <!-- ファビコン -->
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">  <!-- fa  -->
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">  <!-- ress.css(リセット)読込 -->
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">  <!-- google fonts読込 -->
+        <link href="css/style.css" rel="stylesheet">  <!-- 自分のcss 必ずressより下に記載 -->
+    <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+<body>
+  <header id="header"> 
+    <div class="wrapper header-nav">
+      <a href="#" class="logo"><p class="logo-main">星駆水族館</p><p class="logo-sub">癒しと笑顔を与える水族館</p></a>
+      <div class="toggle-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul> 
+        <li><a class="menu-btn" href="#top"><span class="fa fa-fish my-fa"></span>  トップ  <span class="fa fa-fish my-fa fa-flip-horizontal"></span></a></li>
+        <li><a class="menu-btn" href="#recommended"><span class="fa fa-fish my-fa"></span>  おすすめ <span class="fa fa-fish my-fa fa-flip-horizontal"></span></a></li>
+        <li><a class="menu-btn" href="#event"><span class="fa fa-fish my-fa"></span>  イベント <span class="fa fa-fish my-fa fa-flip-horizontal"></span></a></li>
+        <li><a class="menu-btn" href="#other"><span class="fa fa-fish my-fa"></span>  お魚たち <span class="fa fa-fish my-fa fa-flip-horizontal"></span></a></li>
+        <li><a class="menu-btn" href="#overview"><span class="fa fa-fish my-fa"></span>  営業案内 <span class="fa fa-fish my-fa fa-flip-horizontal"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="bg">
+    <main>
+      <section id="top">
+        <div class="wrapper">
+          <div class="logo"><h1 class="logo-main">星駆水族館</h1><p class="logo-sub"><span>癒しと笑顔を与える水族館</span></p></div>
+        </div>
+      </section>
+      <section id="intro">
+        <div class="wrapper">
+          <div class="intro-container">
+            <h2 class="intro-title">親子3世代で楽しめる、癒しと笑顔の水族館</h2>
+            <p>星駆水族館は癒しと笑顔をコンセプトに様々なイベントをご用意しております。<br class="pc-view">見ているだけで癒されるクラゲたち、ダイナミックなイルカショーを是非ご体験ください。<br class="pc-view">夜にはライトアップされた館内をめぐるナイトツアーも開催中です。</p>
+          </div>
+        </div>
+      </section>
+      <section id="pikup">
+        <div class="wrapper container">
+          <h3>ピックアップ</h3>
+          <div class="pikup-items">
+            <section class="pikup-item">
+              <a href="#jellyfish">
+                <img src="./img/jellyfish-pikup.jpg" alt="クラゲ">
+                <p>ゆっくりと漂うクラゲたちの癒し</p>
+                <p class="arrow">>>></p>
+              </a>
+            </section>
+            <section class="pikup-item">
+              <a href="#dolphin">
+                <img src="./img/dolphin-show-pikup.jpg" alt="イルカショー">
+                <p>かしこいイルカたちのショー</p>
+                <p class="arrow">>>></p>
+              </a>
+            </section>
+            <section class="pikup-item">
+              <a href="#night-tour">
+                <img src="./img/lightup1-pikup.jpg" alt="ナイトツアー">
+                <p>ライトアップされた館内を散策</p>
+                <p class="arrow">>>></p>
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="recommended">
+        <div class="wrapper container">
+          <h3>おすすめ</h3>
+          <div id="jellyfish" class="recommended-container">
+            <img src="./img/jellyfish.jpg" alt="クラゲ">
+            <div class="recommended-text">
+              <h4>クラゲ館</h4>
+              <p>クラゲの美しさに魅せられて常時50種以上のクラゲを展示し、その生態や魅力を伝えます。<br class="pc-view">クラゲが創りだす特別なひと時をお楽しみください。</p>
+            </div>
+          </div>
+          <div id="dolphin" class="recommended-container">
+            <img src="./img/dolphin-show.jpg" alt="イルカショー">
+            <div class="recommended-text">
+              <h4>イルカショー</h4>
+              <p>水族館のスターたちのショーは「わくわく」・「ドキドキ」。<br class="pc-view">トレーナーと織りなす華麗なエンターテインメントをお楽しみください。</p>
+              <p>(開催時間:  11:00～ 、13:00～ 、15:00～ )</p>
+            </div>
+          </div>
+          <div id="night-tour" class="recommended-container">
+            <img src="./img/lightup2.jpg" alt="ライトアップ">
+            <div class="recommended-text">
+              <h4>ナイトツアー</h4>
+              <p>ライトアップされた館内を散策。<br class="pc-view">水槽の光が反射してなんともロマンティック。<br>ガイド付きのツアーも実施中。普段では見られない生き物たちの寝顔や生態を観察できます。</p>
+              <p>(4月～10月: 19:30 ～ 21:00<br class="pc-view"><span></span> / 11月～3月: 18:30 ～ 20:00)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="event">
+        <div class="wrapper container">
+          <h3>イベント</h3>
+          <div class="event-items">
+            <div class="event-item">
+              <h4>イルカと遊ぼう</h4>
+              <img src="./img/dolphin-experience.jpg" alt="イルカと遊ぶ">
+              <p class="event-text">水族館の人気者”イルカ”と直接ふれあえる。<br class="pc-view">トレーナーになった気分でイルカにエサをあげたり、ジャンプなどの指示を出したり。<br class="pc-view">さらに、水に入ってイルカと一緒に泳げる体験も。<br class="pc-view">優しい目をした愛嬌たっぷりのイルカに心から癒されます。<br class="pc-view">小さなお子様も参加できるので、ご家族でご参加いただけます。</p>
+            </div>
+            <div class="event-item">
+              <h4>小魚プール</h4>
+              <img src="./img/fish pool.jpg" alt="">
+              <p class="event-text">小魚と遊べる水遊びプール。<br class="pc-view">元気いっぱい泳ぎ回る小魚たちと、追いかけっこをしたり、触ってみたり。<br class="pc-view">ご家族でお楽しみいただけます。タオルや着替えをご用意下さい。<br>※ 足のみの入水にしてください。<br>※ 期間限定: 4月～10月のみ開催</p>  
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="other">
+        <div class="wrapper container">
+          <h3>館内のなかまたち</h3>
+          <div class="other-items">
+            <div class="other-item">
+              <img src="./img/dolphin.jpg" alt="イルカ">
+              <h4>イルカ</h4>
+              <div class="other-text">
+                <p>20頭から、多いときは約100頭の群れで生活し、人間には聞こえない音で仲間同士コミュニケーションをとります。
+                  一生を海の中で生活するけど、わたしたち人間と同じ哺乳類です。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">1.8～3.8m</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">200～240kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">世界中の熱帯～温帯地域の海</td>
+                  </tr>
+                  <tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">小魚、いか など</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="other-item">
+              <img src="./img/sea lions.jpg" alt="アシカ">
+              <h4>アシカ</h4>
+              <div class="other-text">
+                <p>日本の動物園や水族館で多く飼育されているアシカ。オスはメスよりも体が大きく、成長すると頭のてっぺんが盛り上がってきます。好奇心旺盛で、頭も良いのでショーで活躍しています。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">2.0～2.4m</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">90～390kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">太平洋東部のカナダからメキシコにかけて</td>
+                  </tr>
+                  <tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">小魚、いか、たこ など</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="other-item">
+              <img src="./img/fur seal.jpg" alt="オットセイ">
+              <h4>オットセイ</h4>
+              <div class="other-text">
+                <p>アシカの仲間ですが、アシカよりも毛深く、短い毛と長い毛が二重に生えています。
+                  質の高い毛皮ができることから、かつて乱獲され数を減らしてしまいました。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">1.5～2.1m</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">50～270kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">太平洋北部、ベーリング海、オホーツク海</td>
+                  </tr>
+                  <tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">小魚、いか、たこ など</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="other-item">
+              <img src="./img/true seal.jpg" alt="アザラシ">
+              <h4>アザラシ</h4>
+              <div class="other-text">
+                <p>寒い海に生息するアザラシで、2月から4月にかけて流氷の上で赤ちゃんを産みます。
+                  お母さんアザラシはたった2週間ほどしか赤ちゃんの面倒をみず、赤ちゃんはすぐにひとり立ちします。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">1.5～1.7m</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">70～120kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">北太平洋、日本海、オホーツク海、ベーリング海</td>
+                  </tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">海底のエビやカニの仲間、小魚、いか、たこ など</td>
+                </tr>
+                </table>
+              </div>
+            </div>
+            <div class="other-item">
+              <img src="./img/humboldt penguin.jpg" alt="ペンギン">
+              <h4>フンボルトペンギン</h4>
+              <div class="other-text">
+                <p>南米チリ～ペルー沿岸の温帯域に住むペンギン。ペンギンと聞くと南極にいると思われがちですが、フンボルトペンギンはサボテンの生える乾燥地域に暮らしています。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">約70cm</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">約4kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">ペルー、チリ沿岸海域</td>
+                  </tr>
+                  <tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">イワシ類</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="other-item">
+              <img src="./img/walrus.jpg" alt="セイウチ">
+              <h4>セイウチ</h4>
+              <div class="other-text">
+                <p>鼻の周りには約500本のテニスラケットのガットのようなヒゲが生え、人間の指のように繊細な感覚を持っています。このヒゲを使って海底に埋もれた貝を探し当てて食べます。</p>
+                <table class="other-table">
+                  <tr>
+                    <th>体長</th>
+                    <td class="first">:</td>
+                    <td class="second">2.5～3.5m</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td class="first">:</td>
+                    <td class="second">550～1900kg</td>
+                  </tr>
+                  <tr>
+                    <th>住みか</th>
+                    <td class="first">:</td>
+                    <td class="second">北極海とその周辺の海</td>
+                  </tr>
+                  <tr>
+                    <th>食べ物</th>
+                    <td class="first">:</td>
+                    <td class="second">二枚貝、いか、ゴカイ、巻貝、動きの遅い魚 など</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="map">
+        <div class="wrapper container">
+          <h3>館内マップ</h3>
+          <img src="./img/areamap.jpg" alt="館内マップ">
+        </div>
+      </section>
+      <section id="overview">
+        <div class="wrapper container">
+          <h3>営業案内/アクセス</h3>
+          <div class="overview">
+            <div class="overview-left">
+              <div class="hours">
+                <h4>営業時間</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2">通常営業時間</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10:00～17:00 (最終入場 16:30)</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2">ナイトツアー</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>4月～10月</th><td>19:30～21:00</td>
+                    </tr>
+                    <tr>
+                      <th>11月～3月</th><td>18:30～20:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fee">
+                <h4>入場料金</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2">10:00～17:00</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>大人(中学校以上)</th><td>2,400円</td>
+                    </tr>
+                    <tr>
+                      <th>4才～小学生</th><td>1,200円</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="2">ナイトツアー</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>大人(中学校以上)</th><td>2,000円</td>
+                    </tr>
+                    <tr>
+                      <th>4才～小学生</th><td>1,000円</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>！！ 夏休み期間限定 ！！<br>7月1日～8月31日の期間中 4才～小学生はナイトツアー半額500円！</p>
+              </div>
+            </div>
+            <div class="overview-right">
+              <div class="access">
+                <h4>アクセス</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.8348355907574!2d136.20118101462353!3d36.26778860518822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDE2JzA0LjAiTiAxMzbCsDEyJzEyLjEiRQ!5e0!3m2!1sja!2sjp!4v1623876761241!5m2!1sja!2sjp" width="400" height="250" style="border: 1px solid #aaa;" allowfullscreen="" loading="lazy"></iframe>
+                <table>
+                  <tr>
+                    <th>住所</th>
+                    <td>福井県あわら市星駆xxx番地xxx号</td>
+                  </tr>
+                  <tr>
+                    <th>電話</th>
+                    <td>TEL 0120-000-000<br>FAX 0120-000-000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section id="contact">
+        <div class="wrapper">
+          <h3>お問合せ</h3>
+          <p>星駆水族館</p>
+          <p>TEL: 0120-000-000</p>
+          <p>FAX: 0120-000-000</p>
+          <p>福井県あわら市星駆xxx番地xxx号</p>
+          <p>受付時間: 9:00～18:00</p>
+          <a href="https://twitter.com/a_mi_yashi" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="v-title"><p>割引実施中</p></div>
+  <div class="v-text"><p>親子3世代でご来館の方は1人当たり20%割引実施中！<br>ぜひご家族でご来館ください。</p></div>
+  <footer id="footer">
+    <p><small>&copy;miyashi 2021</small></p>
+  </footer>
+</body>
+</html>
