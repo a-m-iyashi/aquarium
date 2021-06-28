@@ -277,7 +277,7 @@ h4 {
 /***** /pikup *****/
 /********** recommended **********/
 #recommended h4 {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 #recommended p {
   text-align: left;
@@ -590,6 +590,9 @@ footer {
   .recommended-container {
     flex-direction: column;
   }
+  #recommended h4 {
+  margin-top: 20px;
+  }
   .recommended-container img {
     width: 95%;
   }
@@ -640,7 +643,7 @@ footer {
 
   /***** /overview *****/
   #map img {
-    width: 80%;
+    width: 100px;
   }
   
   /********** contact **********/
