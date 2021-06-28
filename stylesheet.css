@@ -53,7 +53,7 @@ h3, h4 {
 h3 {
   width: 16rem;
   font-size: 1.75rem;
-  background: linear-gradient(transparent 60%, #fff8a8 80%);
+  background: linear-gradient(transparent 60%, #fcfcfc 80%);
   border-radius: 10px;
   margin: 10px auto;
 }
@@ -238,7 +238,7 @@ h4 {
 .intro-container {
   padding: 20px 10px;
   padding-top: 10px;
-  background: #fafac8;
+  background: #fafae6;
   border-radius: 10px;
 }
 
@@ -252,7 +252,7 @@ h4 {
 .pikup-item {
   padding: 10px;
   margin: 10px;
-  background: #fafac8;
+  background: #fafae6;
   border-radius: 10px;
   transition: all 0.5s;
 }
@@ -285,7 +285,7 @@ h4 {
 
 .recommended-container {
   margin: 20px;
-  background: #fafac8;
+  background: #fafae6;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -311,7 +311,7 @@ h4 {
 }
 
 .event-item {
-  background: #fafac8;
+  background: #fafae6;
   padding: 10px 0;
   margin: 10px;
   border-radius: 10px;
@@ -336,7 +336,7 @@ h4 {
 }
 
 .other-item {
-  background: #fafac8;
+  background: #fafae6;
   border-radius: 10px;
 }
 .other-item img {
@@ -378,7 +378,7 @@ h4 {
 /***** /map *****/
 /********** overview **********/
 .overview {
-  background: #fafac8;
+  background: #fafae6;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -639,6 +639,10 @@ footer {
   }
 
   /***** /overview *****/
+  #map img {
+    width: 80%;
+  }
+  
   /********** contact **********/
   #contact p {
     text-align: center;
@@ -651,3 +655,7 @@ footer {
   }
 
   /***** /footer *****/
+  .v-text {
+    width: 95%;
+  } 
+  
