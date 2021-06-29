@@ -622,7 +622,9 @@ footer {
   .other-item .other-text p {
     height: 100px;
   }
-
+  .other-item h4 {
+    font-size: 1.1rem;    
+  }
   /***** /other *****/
   /********** overview **********/
   .overview {
@@ -643,14 +645,16 @@ footer {
 
   /***** /overview *****/
   #map img {
-    width: 100px;
+    width: 95%;
   }
   
   /********** contact **********/
   #contact p {
     text-align: center;
   }
-
+  .map {
+    width: 95%;
+  }
   /***** /contact *****/
   /********** footer **********/
   #footer p {
