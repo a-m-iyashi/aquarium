@@ -625,6 +625,9 @@ footer {
   .other-item h4 {
     font-size: 1.1rem;    
   }
+  .other-text th {
+    width: 25%;
+  }
   /***** /other *****/
   /********** overview **********/
   .overview {
