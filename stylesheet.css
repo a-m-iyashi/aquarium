@@ -238,7 +238,7 @@ h4 {
 .intro-container {
   padding: 20px 10px;
   padding-top: 10px;
-  background: #fafaeb;
+  background: #fafaf5;
   border-radius: 10px;
 }
 
@@ -252,7 +252,7 @@ h4 {
 .pikup-item {
   padding: 10px;
   margin: 10px;
-  background: #fafaeb;
+  background: #fafaf5;
   border-radius: 10px;
   transition: all 0.5s;
 }
@@ -285,7 +285,7 @@ h4 {
 
 .recommended-container {
   margin: 20px;
-  background: #fafaeb;
+  background: #fafaf5;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -311,7 +311,7 @@ h4 {
 }
 
 .event-item {
-  background: #fafaeb;
+  background: #fafaf5;
   padding: 10px 0;
   margin: 10px;
   border-radius: 10px;
@@ -336,7 +336,7 @@ h4 {
 }
 
 .other-item {
-  background: #fafaeb;
+  background: #fafaf5;
   border-radius: 10px;
 }
 .other-item img {
@@ -378,7 +378,7 @@ h4 {
 /***** /map *****/
 /********** overview **********/
 .overview {
-  background: #fafaeb;
+  background: #fafaf5;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
